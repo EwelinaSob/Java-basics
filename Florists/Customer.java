@@ -21,17 +21,22 @@ public class Customer {
 	
 
 	public void pay() {
+
 		cart.removeElt();
-		
+		int size = cart.getContainer().size();
+
 		double price = cart.flowerPrice();
 
-		if (price <= cash) {
-			cash -= price;
-		} else {
-			cart.removeExcess();
-			price = cart.flowerPrice();
-			cash -= price;
+		for (int i = 0; i < size; i++) {
+			if (price <= cash) {
+				cash -= price;
+				break;
+			} else {
+				cart.removeExcess();
+				price = cart.flowerPrice();
+
 			}
+		}
 	}
 
 	public void pack(Box pudelkoJanka) {
