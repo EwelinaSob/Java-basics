@@ -1,5 +1,6 @@
 package florist;
 
+import java.util.Collections;
 import java.util.Iterator;
 
 public class ShoppingCart extends Container {
@@ -17,12 +18,13 @@ public class ShoppingCart extends Container {
 	}
 	
 	public void removeAll() {
-		for(Iterator<Flower> it = list.iterator(); it.hasNext(); ) {
-	    Flower entry = it.next();
-		 it.remove();
-		}
+		list.clear();
 	}
-	public void removeExcess() {list.remove(0);}
+	public void removeExcess() {
+		Collections.sort(list, Flower.PriceComp);
+		System.out.println(list);
+		list.remove(0);
+	}
 
 	public  double flowerPrice() {
 		double priceSC = 0;
