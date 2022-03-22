@@ -22,7 +22,6 @@ public class ShoppingCart extends Container {
 	}
 	public void removeExcess() {
 		Collections.sort(list, Flower.PriceComp);
-		System.out.println(list);
 		list.remove(0);
 	}
 
