@@ -127,7 +127,7 @@
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/Icons/IconDot.java</url>
           <line>10</line>
-          <properties field="color" class="Edytor.Icons.IconDot" />
+          <properties field="color" class="Edytor.IconDot" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

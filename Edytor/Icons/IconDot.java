@@ -1,4 +1,4 @@
-package Edytor;
+package Edytor.Icons;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -10,7 +10,7 @@ public class IconDot implements Icon {
 	
 	  private Color color;
 	 
-	  IconDot(Color c) {
+	  public IconDot(Color c) {
 		    color = c;  }
 
 

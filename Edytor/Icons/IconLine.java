@@ -1,4 +1,4 @@
-package Edytor;
+package Edytor.Icons;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -10,7 +10,7 @@ public class IconLine implements Icon {
 
 	private Color color;
 
-	IconLine(Color c) {
+	public IconLine(Color c) {
 		color = c;
 	}
 
